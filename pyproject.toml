@@ -1,0 +1,16 @@
+[project]
+name = "random-walks"
+version = "0.1.0"
+description = "HW 2 - Random Walks"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.10.0",
+    "notebook>=7.3.2",
+    "numpy>=2.2.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
