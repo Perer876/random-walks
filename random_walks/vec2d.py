@@ -5,12 +5,11 @@ import functools
 
 def rotate(vector: npt.NDArray, radians: float) -> npt.NDArray:
     """
-    Rotate vector v by angle in radians.
+    Rotate vector by angle in radians.
     """
-    return vector.dot(get_rotation_matrix(radians))
+    return vector @ get_rotation_matrix(radians)
 
 
-@functools.lru_cache(maxsize=4)
 def get_rotation_matrix(radians: float) -> npt.NDArray:
     """
     Get rotation matrix for an angle in radians.
