@@ -1,6 +1,5 @@
 import numpy as np
 import numpy.typing as npt
-import functools
 
 
 def rotate(vector: npt.NDArray, radians: float) -> npt.NDArray:
